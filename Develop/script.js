@@ -5,6 +5,7 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 
 // Collect employee data - TODO: Get user input to create and return an array of employee objects
+        //employee data is displayed on the page sorted alphabetically
 const collectEmployees = function() {
   let employeesArray = [];
   let addEmployee = true;
@@ -16,8 +17,11 @@ const collectEmployees = function() {
       salary: 0
     }
 
-    employeeInfo.firstName = prompt('First Name:');
-    employeeInfo.lastName = prompt('Last Name');
+    employeeInfo.firstName = prompt('First Name:').toLowerCase();
+    employeeInfo.lastName = prompt('Last Name').toLowerCase();
+   
+
+
     employeeInfo.salary = prompt('Salary');
     employeeInfo.salary = parseInt(employeeInfo.salary);
 
@@ -27,9 +31,11 @@ const collectEmployees = function() {
 
     employeesArray.push(employeeInfo);
     addEmployee = confirm('Add another employee?')
+
   }
   //console.log(employeesArray);
   return employeesArray;
+
 }
 
 
