@@ -27,9 +27,10 @@ THEN my employee data is displayed on the page sorted alphabetically by last nam
 ```
 
 ## Website
-
+(https://alarrabee.github.io/javascript-employee-payroll-tracker/)
 
 ## Screenshot
+![image](https://github.com/alarrabee/javascript-employee-payroll-tracker/assets/149320486/2ff2cb57-677d-4122-8781-f9d7061573ff)
 
 
 ## Acknowledgments
